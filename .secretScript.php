@@ -5,21 +5,7 @@ $db_pass = '';
 function genPass() {
     $p = '';
 
-    srand(1727649597);
-    //randomizing ! 
-    rand(0, 20);
-    rand(0, 100);
-
-    //more random stuff
-    $x = rand(0,9000);
-
-    $charset = "abcdefghijklmnopqrstuvwxyzABDEFGHIJKLMNOPQRSTUVWXYZ098765421";
-
-    $y = $charset[rand(0, 30)];
-    $z = $charset[rand(0, 10)];
-    
-    $p = hash('sha256', $x . $y . $z);
-
+    //After the security incident, we decided that this will be implemented on the server side
     return $p;
   }
   
