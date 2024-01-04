@@ -983,3 +983,16 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 		return __( ', ', 'twentyeleven' );
 	}
 endif;
+
+
+// Modifier le logo sur la page de connexion à l'administration : https://wpmarmite.com/snippet/modifier-logo-connexion-wordpress/
+function wpm_login_style() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/OneBank-logo.png);
+        }
+		
+		/*Vous pouvez ajouter d'autres styles CSS ici */
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'wpm_login_style' );
