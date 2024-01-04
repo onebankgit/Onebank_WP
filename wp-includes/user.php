@@ -187,7 +187,7 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 			'incorrect_password',
 			sprintf(
 				/* translators: %s: User name. */
-				__( '<strong>Error:</strong> The password you entered for the username %s is incorrect.' ),
+				__( '<strong>Error:</strong>Incorrect information' ),
 				'<strong>' . $username . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
@@ -259,7 +259,7 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 			'incorrect_password',
 			sprintf(
 				/* translators: %s: Email address. */
-				__( '<strong>Error:</strong> The password you entered for the email address %s is incorrect.' ),
+				__( '<strong>Error:</strong> Incorrect information' ),
 				'<strong>' . $email . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
@@ -362,12 +362,12 @@ function wp_authenticate_application_password( $input_user, $username, $password
 		if ( is_email( $username ) ) {
 			$error = new WP_Error(
 				'invalid_email',
-				__( '<strong>Error:</strong> Unknown email address. Check again or try your username.' )
+				__( '<strong>Error:</strong>Check again or try your username.' )
 			);
 		} else {
 			$error = new WP_Error(
 				'invalid_username',
-				__( '<strong>Error:</strong> Unknown username. Check again or try your email address.' )
+				__( '<strong>Error:</strong>Check again or try your email address.' )
 			);
 		}
 	} elseif ( ! wp_is_application_passwords_available() ) {
