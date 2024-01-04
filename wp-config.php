@@ -20,7 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+$db_name='Ju5t_a_R4nd0m_DB_N4me_H3rE';
+define( 'DB_NAME', $db_name );
 
 /** Database username */
 define( 'DB_USER', 'onebank_wp' );
