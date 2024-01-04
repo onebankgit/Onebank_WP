@@ -7,4 +7,5 @@ This project aims to create an internal website for a certain purpose.
  - ~~Replace WP images with OneBank~~
  - Add security features
    1. ~~hard to find db name~~
-   2. script to generate db password
+   2. ~~script to generate db password~~
+   3. ...
