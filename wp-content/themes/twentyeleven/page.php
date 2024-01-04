@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying all page
+ * Template for displaying all pages
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
